@@ -1,0 +1,7 @@
+rose red 30 5.5 2017 2 31
+rose white 28 5.0 2017 2 30
+rose pink 20 4.5 2017 2 30
+tulip yellow 15 3.0 2017 3 1
+tulip pink 15 3.0 2017 3 1
+tulip white 15 3.0 2017 3 1
+chamomile yellow 13 4.0 2017 2 30

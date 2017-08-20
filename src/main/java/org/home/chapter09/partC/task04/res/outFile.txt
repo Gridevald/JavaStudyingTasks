@@ -1,0 +1,67 @@
+PACKAGE org.HOME.CHAPTER09.PARTC.TASK01;
+
+IMPORT JAVA.io.FILE;
+IMPORT JAVA.io.FILENOTFOUNDEXCEPTION;
+IMPORT JAVA.io.PRINTWRITER;
+IMPORT JAVA.UTIL.LINKEDLIST;
+IMPORT JAVA.UTIL.LIST;
+IMPORT JAVA.UTIL.RANDOM;
+IMPORT JAVA.UTIL.SCANNER;
+
+/**
+ * FILLS FILE WITH RANDOM NUMBERS and SORTS NUMBERS in THIS FILE.
+ */
+PUBLIC CLASS TASK01 {
+    
+    PUBLIC STATIC VOID MAIN(STRING[] ARGS) {
+        STRING PATH = "src/MAIN/JAVA/org/HOME/CHAPTER09/PARTC/TASK01/FILES";
+        TASK01 obj = new TASK01();
+        obj.DONEWFILE(PATH, 50, 50000);
+        obj.DOSORTFILE(PATH);
+    }
+    
+    PRIVATE VOID DONEWFILE(STRING PATH, int AMOUNT, int BOUND) {
+        FILE dir = new FILE(PATH);
+        BOOLEAN ok;
+        if (!dir.EXISTS()) {
+            ok = dir.MKDIR();
+        } ELSE {
+            ok = TRUE;
+        }
+        if (ok) {
+            try (PRINTWRITER pw = new PRINTWRITER(new FILE(PATH, "TASK01.txt"))) {
+                SYSTEM.out.PRINTLN("New FILE CREATED (" + PATH + "/TASK01.txt).");
+                RANDOM RANDOM = new RANDOM();
+                for (int i = 0; i < AMOUNT; i++) {
+                    pw.PRINTLN(RANDOM.NEXTINT(BOUND));
+                }
+                SYSTEM.out.PRINTLN("FILE FILLED WITH " + AMOUNT + " RANDOM NUMBERS in BOUNDS [0; " + BOUND + "].");
+            } CATCH (FILENOTFOUNDEXCEPTION e) {
+                SYSTEM.err.PRINTLN("ERROR: " + e);
+                e.PRINTSTACKTRACE();
+            }
+        } ELSE {
+            SYSTEM.err.PRINTLN("CAN'T MAKE DIRECTORY!");
+        }
+    }
+    
+    PRIVATE VOID DOSORTFILE(STRING PATH) {
+        LIST<INTEGER> NUMBERS = new LINKEDLIST<>();
+        try (SCANNER sc = new SCANNER(new FILE(PATH, "TASK01.txt"))) {
+            WHILE (sc.HASNEXTINT()) {
+                NUMBERS.add(sc.NEXTINT());
+            }
+        } CATCH (FILENOTFOUNDEXCEPTION e) {
+            SYSTEM.err.PRINTLN("ERROR: " + e);
+        }
+        SYSTEM.out.PRINTLN("FILE are FOUND.");
+        NUMBERS.SORT(INTEGER::COMPARETO);
+        SYSTEM.out.PRINTLN("NUMBERS are SORTED.");
+        try (PRINTWRITER pw = new PRINTWRITER(new FILE(PATH, "TASK01.txt"))) {
+            NUMBERS.FOREACH(pw::PRINTLN);
+        } CATCH (FILENOTFOUNDEXCEPTION e) {
+            SYSTEM.err.PRINTLN("ERROR: " + e);
+        }
+        SYSTEM.out.PRINTLN("FILE FILLED WITH SORTED NUMBERS");
+    }
+}

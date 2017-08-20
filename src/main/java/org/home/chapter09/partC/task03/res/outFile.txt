@@ -1,0 +1,67 @@
+;10ksat.Ctrap.90retpahc.emoh.gro egakcap
+
+;eliF.oi.avaj tropmi
+;noitpecxEdnuoFtoNeliF.oi.avaj tropmi
+;retirWtnirP.oi.avaj tropmi
+;tsiLdekniL.litu.avaj tropmi
+;tsiL.litu.avaj tropmi
+;modnaR.litu.avaj tropmi
+;rennacS.litu.avaj tropmi
+
+**/
+.elif siht ni srebmun stros dna srebmun modnar htiw elif slliF * 
+/* 
+{ 10ksaT ssalc cilbup
+    
+{ )sgra ][gnirtS(niam diov citats cilbup    
+;"selif/10ksat/Ctrap/90retpahc/emoh/gro/avaj/niam/crs" = htap gnirtS        
+;)(10ksaT wen = jbo 10ksaT        
+;)00005 ,05 ,htap(eliFweNod.jbo        
+;)htap(eliFtroSod.jbo        
+}    
+    
+{ )dnuob tni ,tnuoma tni ,htap gnirtS(eliFweNod diov etavirp    
+;)htap(eliF wen = rid eliF        
+;ko naeloob        
+{ ))(stsixe.rid!( fi        
+;)(ridkm.rid = ko            
+{ esle }        
+;eurt = ko            
+}        
+{ )ko( fi        
+{ )))"txt.10ksat" ,htap(eliF wen(retirWtnirP wen = wp retirWtnirP( yrt            
+;)".)txt.10ksat/" + htap + "( detaerc elif weN"(nltnirp.tuo.metsyS                
+;)(modnaR wen = modnar modnaR                
+{ )++i ;tnuoma < i ;0 = i tni( rof                
+;))dnuob(tnItxen.modnar(nltnirp.wp                    
+}                
+;)".]" + dnuob + " ;0[ sdnuob ni srebmun modnar " + tnuoma + " htiw dellif eliF"(nltnirp.tuo.metsyS                
+{ )e noitpecxEdnuoFtoNeliF( hctac }            
+;)e + " :RORRE"(nltnirp.rre.metsyS                
+;)(ecarTkcatStnirp.e                
+}            
+{ esle }        
+;)"!yrotcerid ekam t'naC"(nltnirp.rre.metsyS            
+}        
+}    
+    
+{ )htap gnirtS(eliFtroSod diov etavirp    
+;)(><tsiLdekniL wen = srebmun >regetnI<tsiL        
+{ )))"txt.10ksat" ,htap(eliF wen(rennacS wen = cs rennacS( yrt        
+{ ))(tnItxeNsah.cs( elihw            
+;))(tnItxen.cs(dda.srebmun                
+}            
+{ )e noitpecxEdnuoFtoNeliF( hctac }        
+;)e + " :RORRE"(nltnirp.rre.metsyS            
+}        
+;)".dnuof era eliF"(nltnirp.tuo.metsyS        
+;)oTerapmoc::regetnI(tros.srebmun        
+;)".detros era srebmuN"(nltnirp.tuo.metsyS        
+{ )))"txt.10ksat" ,htap(eliF wen(retirWtnirP wen = wp retirWtnirP( yrt        
+;)nltnirp::wp(hcaErof.srebmun            
+{ )e noitpecxEdnuoFtoNeliF( hctac }        
+;)e + " :RORRE"(nltnirp.rre.metsyS            
+}        
+;)"srebmun detros htiw dellif eliF"(nltnirp.tuo.metsyS        
+}    
+}
