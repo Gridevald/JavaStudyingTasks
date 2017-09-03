@@ -1,22 +1,22 @@
 package org.home;
 
-import org.home.jUnit.jUnitClass;
+import org.home.jUnit.JUnitClass;
 import org.junit.Ignore;
 import org.junit.Test;
 
 import static org.junit.Assert.*;
 
-public class jUnitTest {
+public class JUnitTest {
 
     @Test
     public void testOne() {
-        double d = new jUnitClass().methodZeroDivide(1);
+        double d = new JUnitClass().methodZeroDivide(1);
         assertEquals(d, 1, 0.0001);
     }
 
     @Test(expected = ArithmeticException.class)
     public void testZero() {
-        new jUnitClass().methodZeroDivide(0);
+        new JUnitClass().methodZeroDivide(0);
     }
 
     @Ignore("test ignore annotation")

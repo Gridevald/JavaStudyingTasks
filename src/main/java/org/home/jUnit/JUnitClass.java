@@ -1,6 +1,6 @@
 package org.home.jUnit;
 
-public class jUnitClass {
+public class JUnitClass {
 
     public double methodZeroDivide(int input) throws ArithmeticException {
         return 1 / input;
